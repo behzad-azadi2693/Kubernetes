@@ -1,1 +1,41 @@
-jhhj
+============minikube=============
+install minikube for local machine
+
+minikube is a one node cluster, where the master and worker processes are on the same machine
+
+--->command
+➜ minikube start --vm-driver=docker   
+➜ minikube dashboard
+➜ minikube stop
+➜ minikube logs --file=logs.txt
+➜ 
+➜ 
+➜ 
+➜ 
+➜ 
+➜ 
+
+============kubectl=============
+install kubectl
+
+kubectl, the command line tool for kubernets
+
+--->command
+➜ kubectl version --client                                               
+➜ kubectl cluster-info
+➜ kubectl convert --help
+➜ gcloud container cluster create alpine --num-node alpine               
+➜ kubectl get node
+➜ kubectl get pods
+➜ kubectl describe pod
+➜ kubectl get services
+➜ 
+➜ 
+➜ 
+➜ 
+➜ 
+➜ 
+➜ 
+➜ 
+============pod=============
+a pod is a group of one or more tightly related containers that will always run together on the same worker node and in the same linux nameespace, each pod is like a separate logical machine with its own ip, hostname, process and so on, running a single application 
