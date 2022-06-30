@@ -19,21 +19,30 @@ minikube is a one node cluster, where the master and worker processes are on the
 install kubectl
 
 kubectl, the command line tool for kubernets
+you can run pods from three ways 1-yaml file 2-json file(for api) 3-cmmand kubectl run ...
+
 
 --->command
 ➜ kubectl version --client                                               
 ➜ kubectl cluster-info
-➜ kubectl convert --help
-➜ gcloud container cluster create alpine --num-node alpine               
+➜ kubectl convert --help               
 ➜ kubectl get node
 ➜ kubectl get pods
-➜ kubectl describe pod
+➜ kubectl describe pods/<pod name>
+➜ kubectl describe nodes <node name>
 ➜ kubectl get services
-➜ 
-➜ 
-➜ 
-➜ 
-➜ 
+➜ kubectl describe pod <name pod>
+➜ kuebctl get rc
+➜ kubectl run <name> --image=<image name> --port:<port> --generator=run/v1
+➜ kubectl get po <pod name> -o yaml
+➜ kubectl explain pod
+➜ kubectl logs <pod name>
+➜ kubectl port-forward <pod name> port:port
+➜ kubectl create -f <file name>.yml
+➜ kubectl describe pod <pod name>
+➜ kubectl delete po --all
+➜ kubectl delete <pod name>
+➜ kubectl delete all --all
 ➜ 
 ➜ 
 ➜ 
